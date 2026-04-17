@@ -14,7 +14,7 @@ namespace WebApi.Controllers
         {
             _customerService = customerService;
         }
-        [HttpGet(Name ="All")]
+        [HttpGet("All")]
         public IActionResult getAll()
         {
             try
@@ -28,7 +28,7 @@ namespace WebApi.Controllers
                 throw new Exception(ex.Message);
             }
         }
-        [HttpGet(Name = "One")]
+        [HttpGet("One")]
         public IActionResult getOne(string id)
         {
             try
